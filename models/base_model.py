@@ -21,7 +21,6 @@ class BaseModel:
             args: variable length argument list
             kwargs: arbitrary keyword arguments
         """
-
         time = "%Y-%m-%dT%H:%M:%S.%f"
         if kwargs:
             for key, value in kwargs.items():
@@ -48,7 +47,6 @@ class BaseModel:
             str: A string containing the class name, the object's ID, and its
             attributes.
         """
-
         name = self.__class__.__name__
         return "[{}] ({}) {}".format(name, self.id, self.__dict__)
 
@@ -58,7 +56,6 @@ class BaseModel:
         Returns:
             None
         """
-
         setattr(self, 'updated_at', datetime.now())
         models.storage.save()
 
@@ -70,7 +67,6 @@ class BaseModel:
             "__class__" key with the class name. Datetime objects are
             converted to ISO formatted strings.
         """
-
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
         obj_dict['created_at'] = self.created_at.isoformat()
