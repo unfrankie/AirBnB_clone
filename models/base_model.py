@@ -42,14 +42,35 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
+        """ Returns a string representation of the object.
+
+        Returns:
+            str: A string containing the class name, the object's ID, and its
+            attributes.
+        """
+
         name = self.__class__.__name__
         return "[{}] ({}) {}".format(name, self.id, self.__dict__)
 
     def save(self):
+        """ Updates the updated_at attribute with the current timestamp.
+
+        Returns:
+            None
+        """
+
         setattr(self, 'updated_at', datetime.now())
         models.storage.save()
 
     def to_dict(self):
+        """ Returns a dictionary representation of the object.
+
+        Returns:
+            dict: A dictionary containing the object's attributes and the
+            "__class__" key with the class name. Datetime objects are
+            converted to ISO formatted strings.
+        """
+
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
         obj_dict['created_at'] = self.created_at.isoformat()
