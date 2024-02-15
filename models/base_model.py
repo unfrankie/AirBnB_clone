@@ -47,8 +47,7 @@ class BaseModel:
             str: A string containing the class name, the object's ID, and its
             attributes.
         """
-        name = self.__class__.__name__
-        return "[{}]({}) {}".format(name, self.id, self.__dict__)
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """ Updates the updated_at attribute with the current timestamp.
