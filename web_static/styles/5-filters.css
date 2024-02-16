@@ -24,31 +24,31 @@ section.filters button:hover {
 }
 
 .locations{
-    text-align: left;
-    height: 100%;
-    width: 25%;
-    border-right: 1px solid #DDDDDD;
+	text-align: left;
+	height: 100%;
+	width: 25%;
+	border-right: 1px solid #DDDDDD;
 	float: left;
 	margin-left: 40px;
 }
 
 .amenities{
-    text-align: left;
-    height: 100%;
-    width: 25%;
-    margin-left: 40px;
-    float: left;
+	text-align: left;
+	height: 100%;
+	width: 25%;
+	margin-left: 40px;
+	float: left;
 }
 
 h3{
-    font-weight: 600;
-    margin: 17px 0 0 0;
-    padding: 0px;
+	font-weight: 600;
+    	margin: 17px 0 0 0;
+    	padding: 0px;
 }
 
 h4{
-    font-weight: 400;
-    font-size: 14px;
+    	font-weight: 400;
+    	font-size: 14px;
 	margin: 0px;
-    padding: 0px;
+    	padding: 0px;
 }
