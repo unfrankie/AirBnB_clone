@@ -16,6 +16,7 @@
 }
 
 .places article {
+  height: 35px;
   width: 390px;
   padding: 20px;
   margin: 20px;
