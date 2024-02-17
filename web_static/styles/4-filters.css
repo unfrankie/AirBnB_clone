@@ -21,6 +21,6 @@
   	top: 15%;
 }
 
-filters button:hover {
+.filters button:hover {
 	opacity: 90%;
 }
