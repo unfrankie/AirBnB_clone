@@ -16,7 +16,6 @@
 }
 
 .places article {
-  height: 35px;
   width: 390px;
   padding: 20px;
   margin: 20px;
@@ -27,6 +26,5 @@
 }
 
 .places article h2 {
-  margin: auto;
   font-size: 30px;
 }
